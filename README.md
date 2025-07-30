@@ -34,8 +34,10 @@ Neste repositório serão colocados os arquivos contendo:
 #### Backend
 Documentação da linguagem
 - https://www.php.net/manual/pt_BR/
-Pacote com os programas necessários para estudo em casa. Apache + PHP + Mysql 
+
+Pacote com os programas necessários para estudo em casa. Apache + PHP + Mysql
 - https://www.apachefriends.org/pt_br/download.html
+
 Site para prática de programação online
 - https://www.onlinegdb.com/ https://www.onlinegdb.com/
 
