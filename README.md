@@ -5,13 +5,22 @@
 * **FrontEnd**: 48 horas 
 
 # Cronograma das Aulas
-
+### Backend
 | Julho |  Agosto | Setembro | Outubro | Novembro | Dezembro |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| 28/07 | - | - | - | - | - |
-| 29/07 | - | - | - | - | - |
+| 28/07 | 04/08 | - | - | - | - |
+| 29/07 | 05/08 | - | - | - | - |
+| - | 11/08 | - | - | - | - |
+| - | 12/08 | - | - | - | - |
+| - | 18/08 | - | - | - | - |
+| - | 19/08 | - | - | - | - |
+| - | 25/08 | - | - | - | - |
+| - | 26/08 | - | - | - | - |
 
-
+### Frontend
+| Julho |  Agosto | Setembro | Outubro | Novembro | Dezembro |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| - | - | - | - | - | - |
 
 
 ## O que teremos aqui
@@ -23,20 +32,23 @@ Neste repositório serão colocados os arquivos contendo:
 
 ## Exercícios
 
-- [Lista de Exercícios 01](https://github.com/kohlerricardo/ProgramadorWebSenac/blob/main/Exerc%C3%ADcios.md)
+- Lista_de_exercícios_1.md
+- Lista_de_exercícios_2.md
+
 
 ## Material Complementar
 | Backend | Frontend |
 |:---:|:---:|
-|---|---|
+|[Slides Revisão 01](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/EaSBPg_xgO5Mlp60gr8emXMBcUNwbGjCD5hbnwWP6EKZfA?e=FTpIZM) |---|
+|[Slides Revisão 02]|---|
 
-## Links úteis
+### Links úteis
 #### Backend
-Documentação da linguagem
-- https://www.php.net/manual/pt_BR/
-Pacote com os programas necessários para estudo em casa. Apache + PHP + Mysql 
-- https://www.apachefriends.org/pt_br/download.html
-Site para prática de programação online
-- https://www.onlinegdb.com/ https://www.onlinegdb.com/
+- Documentação da linguagem
+    - https://www.php.net/manual/pt_BR/
+- Pacote com os programas necessários para estudo em casa. Apache + PHP + Mysql 
+    - https://www.apachefriends.org/pt_br/download.html
+- Site para prática de programação online
+    - https://www.onlinegdb.com/ https://www.onlinegdb.com/
 
 #### Fontend
