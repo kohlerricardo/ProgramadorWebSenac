@@ -41,7 +41,7 @@ Neste repositório serão colocados os arquivos contendo:
 | Backend | Frontend |
 |:---:|:---:|
 |[Slides Revisão 01](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/EaSBPg_xgO5Mlp60gr8emXMBcUNwbGjCD5hbnwWP6EKZfA?e=FTpIZM) |---|
-|[Slides Revisão 02]|---|
+|[Slides Revisão 02](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/EQ6ozBAL6DBAriefSOr9WiUBqnE5rXgSAJnvjl6zEQIi8w?e=WQ2E3i)|---|
 
 ### Links úteis
 #### Backend
