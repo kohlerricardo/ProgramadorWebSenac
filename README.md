@@ -32,8 +32,9 @@ Neste repositório serão colocados os arquivos contendo:
 
 ## Exercícios
 
-- Lista_de_exercícios_1.md
-- Lista_de_exercícios_2.md
+- [Lista_de_exercícios_1.md](https://github.com/kohlerricardo/ProgramadorWebSenac/blob/main/Lista_de_exercicios_1.md)
+- [Lista_de_exercícios_2.md](https://github.com/kohlerricardo/ProgramadorWebSenac/blob/main/Lista_de_exercicios_2.md)
+- [Lista_de_exercícios_3.md](https://github.com/kohlerricardo/ProgramadorWebSenac/blob/main/Lista_de_exercicios_3.md)
 
 
 ## Material Complementar

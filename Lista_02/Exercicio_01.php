@@ -1,13 +1,17 @@
 <?php
-// Calcule a média de uma turma de 5 alunos. Cada aluno possui 3 notas 
-// Solicite que o usuário informe as notas
-// Calcule a média e exiba as notas de cada aluno
 
-$notas = array();
-$notas[0] = readline("Informe o nome do aluno:");
-$notas[1] = readline("Informe a 1ª nota do aluno:");
-$notas[2] = readline("Informe a 2ª nota do aluno:");
-$notas[3] = readline("Informe a 3ª nota do aluno:");
-$notas[4] = ($notas[1]+$notas[2]+$notas[3])/3;
+// Exercício 1: Soma Total
 
-echo "O aluno $notas[0] possui média $notas[4]";
+// Crie um array numérico com 5 números inteiros. Percorra o array e calcule a soma de todos os seus elementos. Ao final, exiba o resultado.
+
+//     Opção: Solicite ao usuário que informe os valores do array.
+
+$numeros = [1,2,3,4,5];
+$soma=0;
+for($i=0;$i<5;$i++)
+{
+    $soma = $soma+$numeros[$i];
+}
+
+echo "O valor da soma dos número do vetor com for é $soma\n";
+echo "O valor da soma dos número do vetor com array_sum é ".array_sum($numeros)."\n";
