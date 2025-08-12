@@ -10,12 +10,12 @@
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 28/07 | 04/08 | - | - | - | - |
 | 29/07 | 05/08 | - | - | - | - |
-| - | 11/08 | - | - | - | - |
-| - | 12/08 | - | - | - | - |
-| - | 18/08 | - | - | - | - |
-| - | 19/08 | - | - | - | - |
-| - | 25/08 | - | - | - | - |
-| - | 26/08 | - | - | - | - |
+| -     | 11/08 | - | - | - | - |
+| -     | 12/08 | - | - | - | - |
+| -     | 18/08 | - | - | - | - |
+| -     | 19/08 | - | - | - | - |
+| -     | 25/08 | - | - | - | - |
+| -     | 26/08 | - | - | - | - |
 
 ### Frontend
 | Julho |  Agosto | Setembro | Outubro | Novembro | Dezembro |
@@ -50,6 +50,11 @@ Neste repositório serão colocados os arquivos contendo:
 - Pacote com os programas necessários para estudo em casa. Apache + PHP + Mysql 
     - https://www.apachefriends.org/pt_br/download.html
 - Site para prática de programação online
-    - https://www.onlinegdb.com/ https://www.onlinegdb.com/
+    - https://www.onlinegdb.com/ 
 
 #### Fontend
+
+- Referência HTML
+    - https://developer.mozilla.org/pt-BR/docs/Web/HTML
+- Framework CSS
+    - https://picocss.com/docs
