@@ -35,13 +35,15 @@ Neste repositório serão colocados os arquivos contendo:
 - [Lista_de_exercícios_1.md](https://github.com/kohlerricardo/ProgramadorWebSenac/blob/main/Lista_de_exercicios_1.md)
 - [Lista_de_exercícios_2.md](https://github.com/kohlerricardo/ProgramadorWebSenac/blob/main/Lista_de_exercicios_2.md)
 - [Lista_de_exercícios_3.md](https://github.com/kohlerricardo/ProgramadorWebSenac/blob/main/Lista_de_exercicios_3.md)
-
+- [Lista_de_exercícios_4.md](https://github.com/kohlerricardo/ProgramadorWebSenac/blob/main/Lista_de_exercicios_4.md)
 
 ## Material Complementar
 | Backend | Frontend |
 |:---:|:---:|
 |[Slides Revisão 01](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/EaSBPg_xgO5Mlp60gr8emXMBcUNwbGjCD5hbnwWP6EKZfA?e=FTpIZM) |---|
 |[Slides Revisão 02](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/EQ6ozBAL6DBAriefSOr9WiUBqnE5rXgSAJnvjl6zEQIi8w?e=WQ2E3i)|---|
+|[Slides Introdução a Web](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/EYHbfNmkmElJrX-Kp9VBIsoBwuZvPj0M8mkAf3Ow-xIBmw?e=ulR3Bz)|---|
+|[PHP Programando com Orientação a Objetos - 4a Edição](https://annas-archive.org/md5/2c38271faa9a7200d42bbaefef9d74ba)|---|
 
 ### Links úteis
 #### Backend
