@@ -1,5 +1,14 @@
 # Habilita o motor de reescrita de URL do Apache
 RewriteEngine On
+# ----------------------------------------------------------------------
+# INÍCIO DA MODIFICAÇÃO
+# ----------------------------------------------------------------------
+# Define o caminho base para as regras de reescrita.
+# Este caminho DEVE corresponder à sua estrutura de pastas no htdocs.
+RewriteBase /ProgramadorWebSenac/MVC/public/
+# ----------------------------------------------------------------------
+# FIM DA MODIFICAÇÃO
+# ----------------------------------------------------------------------
 
 # Impede que a regra seja aplicada a arquivos e diretórios existentes
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -29,7 +29,8 @@ abstract class Controller
      */
     protected function view($viewName, $data = [])
     {
-        $viewFile = ROOT . '/app/Views/' . $viewName . '.php';
+        $viewFile = ROOT .DIRECTORY_SEPARATOR. VIEW_FOLDER . $viewName . '.php';
+
         if (file_exists($viewFile)) {
             // Transforma as chaves do array de dados em variáveis
             // Ex: $data['produtos'] se torna a variável $produtos na view
@@ -41,9 +42,9 @@ abstract class Controller
             $content = ob_get_clean(); // Pega o conteúdo da view
 
             // Renderiza o layout completo
-            require_once ROOT . '/app/Views/layouts/header.php';
+            // require_once ROOT . '/app/Views/layouts/header.php';
             echo $content;
-            require_once ROOT . '/app/Views/layouts/footer.php';
+            // require_once ROOT . '/app/Views/layouts/footer.php';
         } else {
             die("Erro: View '{$viewName}' não encontrada.");
         }

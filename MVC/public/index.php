@@ -4,12 +4,10 @@ session_start();
 
 define('ROOT', dirname(__DIR__));
 
-spl_autoload_register(function ($className) {
-    $file = ROOT . '/' . str_replace('\\', '/', lcfirst($className)) . '.php';
-    if (file_exists($file)) {
-        require_once $file;
-    }
-});
+
+require_once ROOT . '/vendor/autoload.php';
+// Carrega constantes definidas para uso 
+require_once ROOT . '/app/config/defines.php';
 
 // 1. Instancia o roteador
 $router = new App\Core\Router();

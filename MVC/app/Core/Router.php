@@ -88,12 +88,21 @@ class Router
     }
     
     /**
-     * Obtém a URI atual da requisição.
+     * Obtém a URI atual da requisição, já tratada para subpastas.
      * @return string
      */
     protected function getCurrentUri()
     {
-        $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
-        return $uri === '' ? '/' : '/' . $uri;
+        // Pega a URI completa da requisição (ex: /ProgramadorWebSenac/MVC/public/produtos)
+        $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+        // Remove o caminho da subpasta (BASE_PATH) do início da URI, se existir.
+        // Isso garante que o roteador trabalhe apenas com a rota lógica (ex: /produtos)
+        if (defined('BASE_PATH') && strpos($uri, BASE_PATH) === 0) {
+            $uri = substr($uri, strlen(BASE_PATH));
+        }
+        
+        // Garante que a URI comece com uma barra. Se estiver vazia (página inicial), retorna '/'
+        return empty($uri) ? '/' : $uri;
     }
 }
