@@ -6,7 +6,7 @@ class Produto
     private $nome;
     private $preco;
 
-    public function __construct($nome,$preco=null,$id=null)
+    public function __construct($nome=null,$preco=null,$id=null)
     {
         $this->id = $id;
         $this->nome = $nome;

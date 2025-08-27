@@ -4,12 +4,17 @@ session_start();
 
 $nome = $_POST['nome'];
 $preco = $_POST['preco'];
+$id = isset($_POST['id'])? $_POST['id']:null; 
 
 $produto = new Produto($nome,$preco);
-// $produto->setNome($nome);
-// $produto->setPreco($preco);
-// $carrinho = new Carrinho();
-$_SESSION['carrinho']->adicionarProduto($produto);
+if($id==null){
+    // $produto->setNome($nome);
+    // $produto->setPreco($preco);
+    // $carrinho = new Carrinho();
+    $_SESSION['carrinho']->adicionarProduto($produto);
+}else{
+    $_SESSION['carrinho']->alterarProduto($id,$produto);
+}
 
 ?>
 <a href="index.php">Voltar</a>
