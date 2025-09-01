@@ -1,4 +1,3 @@
-# --- .htaccess para SimpleMVC com Router Inteligente ---
 
 # Desabilita a listagem de diretórios por segurança
 Options -Indexes
@@ -13,7 +12,7 @@ RewriteEngine On
 DirectoryIndex public/index.php
 # Esta diretiva informa ao Apache qual é o "ponto de partida" para as regras.
 # Deve corresponder à pasta do seu projeto.
-RewriteBase /MVC
+RewriteBase /ProgramadorWebSenac/MVC
 # ----------------------------------------------------------------------
 
 # REGRA 1: Ignora reescrita para arquivos e diretórios existentes

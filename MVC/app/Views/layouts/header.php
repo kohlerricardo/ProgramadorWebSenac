@@ -10,7 +10,7 @@
     <header>
         <nav>
             <a href="/">Início</a>
-            <a href="/produtos">Produtos</a>
+            <a href="<?= BASE_PATH."/produtos"?>">Produtos</a>
         </nav>
     </header>
     <main>
