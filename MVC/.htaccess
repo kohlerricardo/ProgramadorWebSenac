@@ -1,0 +1,34 @@
+
+# Desabilita a listagem de diretórios por segurança
+Options -Indexes
+# Habilita o motor de reescrita de URL
+RewriteEngine On
+
+# ----------------------------------------------------------------------
+# [IMPORTANTE] Configure o caminho da sua subpasta aqui
+# ----------------------------------------------------------------------
+# Definir indice da pasta do projeto. 
+# Toda requisição para a raiz será direcionado para arquivo public/index.php
+DirectoryIndex public/index.php
+# Esta diretiva informa ao Apache qual é o "ponto de partida" para as regras.
+# Deve corresponder à pasta do seu projeto.
+RewriteBase /ProgramadorWebSenac/MVC
+# ----------------------------------------------------------------------
+
+# REGRA 1: Ignora reescrita para arquivos e diretórios existentes
+# ----------------------------------------------------------------------
+# Se a requisição for para um arquivo real (como css/style.css ou uma imagem),
+# ou para um diretório real, o Apache deve servi-lo diretamente.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# REGRA 2: Redireciona todas as outras requisições para o Front Controller
+# ----------------------------------------------------------------------
+# Se a requisição não foi para um arquivo/diretório real (passou pela Regra 1),
+# ela é uma "URL amigável" que nosso Router deve tratar.
+# Reescrevemos a URL internamente para que aponte para public/index.php.
+# A URL original é preservada para que o Router.php possa analisá-la.
+RewriteRule ^(.*)$ public/index.php [L]
+
+# --- Fim da Configuração ---

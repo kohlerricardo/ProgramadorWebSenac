@@ -1,0 +1,17 @@
+{
+    "name": "teaching/mvc",
+    "description": "MicroFramework para estudos sobre MVC",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ricardo",
+            "email": "ricardokhlr@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
