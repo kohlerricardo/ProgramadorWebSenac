@@ -15,7 +15,8 @@ class ProdutosController extends Controller
             'title' => 'Lista de Produtos',
             'produtos' => $produtos
         ];
-        $this->view('produtos/index', $data);
+	var_dump($data);
+        //$this->view('produtos/index', $data);
     }
 
     public function ver($id = 0)
@@ -27,6 +28,7 @@ class ProdutosController extends Controller
             'title' => $produto['nome'] ?? 'Produto não encontrado',
             'produto' => $produto
         ];
-        $this->view('produtos/ver', $data);
+	var_dump($data);
+//        $this->view('produtos/ver', $data);
     }
 }
