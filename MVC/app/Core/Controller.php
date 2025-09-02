@@ -42,7 +42,7 @@ abstract class Controller
             $content = ob_get_clean(); // Pega o conteúdo da view
 
             // Renderiza o layout completo
-            // require_once ROOT . '/app/Views/layouts/header.php';
+             // require_once ROOT . '/app/Views/layouts/header.php';
             echo $content;
             // require_once ROOT . '/app/Views/layouts/footer.php';
         } else {

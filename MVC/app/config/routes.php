@@ -10,6 +10,10 @@ $router->get('/', 'HomeController@index');
 $router->get('/produtos', 'ProdutosController@index');
 $router->get('/produtos/ver/{id}', 'ProdutosController@ver');
 
+$router->get('/clientes','ClienteController@index');
+$router->post('/clientes','ClienteController@create');
+
+
 // // Rotas de Autenticação
 // // A mesma URI pode ter ações diferentes para GET e POST
 // $router->get('/auth', 'AuthController@index');        // Mostra o formulário de login
