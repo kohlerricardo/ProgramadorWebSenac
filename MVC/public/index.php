@@ -9,6 +9,12 @@ require_once ROOT . '/vendor/autoload.php';
 // Carrega constantes definidas para uso 
 require_once ROOT . '/app/config/defines.php';
 
+// // Carrega as variáveis de ambiente do arquivo .env
+// $dotenv = Dotenv\Dotenv::createImmutable(ROOT);
+// $dotenv->load();
+
+//tratador de erros para exibir erros que ocorrem
+App\Core\ErrorHandler::register();
 // 1. Instancia o roteador
 $router = new App\Core\Router();
 

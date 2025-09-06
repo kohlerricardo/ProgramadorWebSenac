@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Models;
-
-class Produto
+use App\Core\Model;
+class Produto extends Model
 {
+    protected $table = 'produto';
     // Simula uma tabela de banco de dados
     private $dados = [
         1 => ['id' => 1, 'nome' => 'Laptop Gamer', 'preco' => 7500.00, 'descricao' => 'Laptop de alta performance para jogos.'],
@@ -17,7 +18,7 @@ class Produto
      */
     public function listarTodos()
     {
-        return $this->dados;
+        return $this->findAll();    
     }
 
     /**
@@ -27,6 +28,6 @@ class Produto
      */
     public function buscarPorId($id)
     {
-        return $this->dados[$id] ?? null;
+        return $this->find($id);
     }
 }

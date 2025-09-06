@@ -25,7 +25,7 @@ class ProdutosController extends Controller
         $produto = $produtoModel->buscarPorId((int)$id);
 
         $data = [
-            'title' => $produto['nome'] ?? 'Produto não encontrado',
+            'title' => $produto->nome ?? 'Produto não encontrado',
             'produto' => $produto
         ];
 	var_dump($data);

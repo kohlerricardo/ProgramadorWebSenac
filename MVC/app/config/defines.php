@@ -7,3 +7,11 @@ define('CONTROLLER_FOLDER','app/Controllers'.DIRECTORY_SEPARATOR);
 # Se a pasta da aplicação for /empregos, o basepath passa a ser define('BASE_PATH','/empregos');
 define('BASE_PATH','/ProgramadorWebSenac/MVC');
 
+// defines para o banco de dados
+define('HOST','172.17.0.2');
+define('DB_NAME','projeto');
+define('USERNAME','root');
+define('PASSWORD','secret-pw');
+$_ENV['APP_ENV']='development';
+
+
