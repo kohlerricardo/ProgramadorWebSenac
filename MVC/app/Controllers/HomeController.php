@@ -12,7 +12,7 @@ class HomeController extends Controller
             'title' => 'Página Inicial',
             'content' => 'Bem-vindo ao SimpleMVC! Este é um micro-framework para fins de estudo.'
         ];
-        $this->view('layouts/header');
+        $this->view('layouts/header',['titulo'=>'Home']);
         $this->view('home/index', $data);
         $this->view('layouts/footer');
     }

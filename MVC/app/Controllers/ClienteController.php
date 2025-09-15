@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Core\Controller;
-
+use App\Models\Cliente;
 class ClienteController extends Controller{
 
    public function index(){
@@ -21,5 +21,9 @@ class ClienteController extends Controller{
    public function create(){
     echo 'Método POST para acesso'; 
    }
+   public function all(){
+    $model = new Cliente();
+    $model->findAll();
 
+   }
 } 

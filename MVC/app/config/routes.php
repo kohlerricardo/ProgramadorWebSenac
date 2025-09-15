@@ -9,9 +9,18 @@ $router->get('/', 'HomeController@index');
 // Rotas de Produtos
 $router->get('/produtos', 'ProdutosController@index');
 $router->get('/produtos/ver/{id}', 'ProdutosController@ver');
+$router->get('/produtos/cadastrar','ProdutosController@cadastrar');//Exibe view de cadastro
+$router->post('/produtos/salvar','ProdutosController@salvar');//Efetivamente salva os dados
+$router->get('/produtos/editar/{id}','');
+$router->get('/produtos/excluir/{id}','');
 
-$router->get('/clientes','ClienteController@index');
-$router->post('/clientes','ClienteController@create');
+
+
+
+
+
+
+
 
 
 // // Rotas de Autenticação

@@ -8,10 +8,10 @@ define('CONTROLLER_FOLDER','app/Controllers'.DIRECTORY_SEPARATOR);
 define('BASE_PATH','/ProgramadorWebSenac/MVC');
 
 // defines para o banco de dados
-define('HOST','172.17.0.2');
+define('HOST','127.0.0.1');
 define('DB_NAME','projeto');
-define('USERNAME','root');
-define('PASSWORD','secret-pw');
+define('USERNAME','root');//não é interessante que se use o root
+define('PASSWORD','');
 $_ENV['APP_ENV']='development';
 
 
