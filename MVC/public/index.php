@@ -8,6 +8,7 @@ define('ROOT', dirname(__DIR__));
 require_once ROOT . '/vendor/autoload.php';
 // Carrega constantes definidas para uso 
 require_once ROOT . '/app/config/defines.php';
+require_once ROOT . '/app/Core/UrlHelper.php';
 
 // // Carrega as variáveis de ambiente do arquivo .env
 // $dotenv = Dotenv\Dotenv::createImmutable(ROOT);

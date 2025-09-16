@@ -22,7 +22,8 @@
                     <td><?= $promo = $produto->promocao?"Sim":"Não"?></td>
                     <td><?= $produto->taxa_promocao?></td>
                     <td>
-                        <a href=""></a>
+                        <a href="http://localhost/ProgramadorWebSenac/MVC/produtos/editar/<?= $produto->id?>">Editar</a>
+                        <a href="http://localhost/ProgramadorWebSenac/MVC/produtos/excluir/<?= $produto->id?>">Excluir</a>
                     </td>
                 </tr>
                 <?php endforeach?>
