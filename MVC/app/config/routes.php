@@ -5,10 +5,11 @@
 
 // Rota para a página inicial
 $router->get('/', 'HomeController@index');
+$router->get('/example','HomeController@example');
 
 // Rotas de Produtos
 $router->get('/produtos', 'ProdutosController@index');
-$router->get('/produtos/ver/{id}', 'ProdutosController@ver');
+$router->get('/produtos/{id}', 'ProdutosController@ver');
 $router->get('/produtos/cadastrar','ProdutosController@cadastrar');//Exibe view de cadastro
 $router->post('/produtos/salvar','ProdutosController@salvar');//Efetivamente salva os dados
 $router->get('/produtos/editar/{id}','ProdutosController@editar');

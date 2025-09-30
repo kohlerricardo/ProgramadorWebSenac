@@ -4,7 +4,6 @@ session_start();
 
 define('ROOT', dirname(__DIR__));
 
-
 require_once ROOT . '/vendor/autoload.php';
 // Carrega constantes definidas para uso 
 require_once ROOT . '/app/config/defines.php';

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Core\Controller;
+use App\Core\Helper;
 
 class HomeController extends Controller
 {
@@ -15,5 +16,9 @@ class HomeController extends Controller
         $this->view('layouts/header',['titulo'=>'Home']);
         $this->view('home/index', $data);
         $this->view('layouts/footer');
+    }
+    public function example()
+    {
+        $this->view('home/example',['url'=>Helper::class]);
     }
 }
