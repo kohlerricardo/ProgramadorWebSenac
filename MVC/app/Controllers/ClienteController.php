@@ -15,15 +15,12 @@ class ClienteController extends Controller{
     $data = ['clientes'=> $clientes,
             'title'=>'Clientes'
             ];
-    $this->view('cliente/clientes',$clientes);
-
+    $this->view('layouts/header',["titulo"=>"Cadastro"]);
+    $this->view('cliente/clientes',$data);
+    $this->view('layouts/footer');
    }
    public function create(){
-    echo 'Método POST para acesso'; 
+    
    }
-   public function all(){
-    $model = new Cliente();
-    $model->findAll();
-
-   }
+   
 } 

@@ -15,7 +15,8 @@ $router->post('/produtos/salvar','ProdutosController@salvar');//Efetivamente sal
 $router->get('/produtos/editar/{id}','ProdutosController@editar');
 $router->get('/produtos/excluir/{id}','ProdutosController@excluir');
 
-
+//Rota para cadastro
+$router->get('/cadastrar','ClienteController@index');
 
 
 
