@@ -17,6 +17,7 @@ $router->get('/produtos/excluir/{id}','ProdutosController@excluir');
 
 //Rota para cadastro
 $router->get('/cadastrar','ClienteController@index');
+$router->post('/cliente/create','ClienteController@create');
 
 
 

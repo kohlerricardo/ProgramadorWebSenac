@@ -1,3 +1,4 @@
 vendor
 compose.yaml
 .env
+.pdf
