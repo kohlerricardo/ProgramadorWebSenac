@@ -22,7 +22,7 @@ $router->post('/cliente/create','ClienteController@create');
 
 
 
-
+$router->post('/fetchAPI','ClienteController@fetchAPI');
 
 
 

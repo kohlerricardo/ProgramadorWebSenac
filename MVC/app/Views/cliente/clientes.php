@@ -1,7 +1,7 @@
 <?= (isset($errors))? $errors: "" ?>
 <main class="container">
     <div class="grid">
-       
+       <button onclick="searchWithFetch()">Fetch</button>
         <div>
         <form action="<?= url_to('cliente/create')?>" method="post" enctype="multipart/form-data">
     
@@ -74,7 +74,7 @@
     })*/
         const arquivos = document.querySelector("input[type=file]")
         arquivos.addEventListener('change',(ev)=>{
-           if(arquivos.files.length>2){
+           if(arquivos.files.length>5){
             alert('Mais arquivos que o possível')
             arquivos.value="";
             }
@@ -101,5 +101,22 @@
 
     })
 
+    async function searchWithFetch(){
+        let corpo = new FormData();
+        corpo.set('valor',"Raspberry")
+        try{
+            let raw = await fetch('http://localhost/ProgramadorWebSenac/MVC/fetchAPI',{
+            method:'POST',
+            body:corpo
+            })
+            if(!raw.ok){
+               throw new Error(`Response status: ${response.status}`);
+            }
+            let content = await raw.text()
+            console.log(content)
+        }catch(error){
+            console.error(error)
+        }     
+    }
    </script> 
 </main>

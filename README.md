@@ -48,6 +48,8 @@ Neste repositório serão colocados os arquivos contendo:
 |[Slides Revisão 02](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/EQ6ozBAL6DBAriefSOr9WiUBqnE5rXgSAJnvjl6zEQIi8w?e=WQ2E3i)|---|
 |[Slides Introdução a Web](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/EYHbfNmkmElJrX-Kp9VBIsoBwuZvPj0M8mkAf3Ow-xIBmw?e=ulR3Bz)|---|
 |[PHP Programando com Orientação a Objetos - 4a Edição](https://annas-archive.org/md5/2c38271faa9a7200d42bbaefef9d74ba)|---|
+|[Introdução à orientação ao Objeto](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/ER403hKtcltGvoRGk8ZGRBYBdvNrmOg3l12SI4jD7Utnsg?e=8T7BlZ)|---|
+|[Upload de Arquivos](https://senacsc754-my.sharepoint.com/:b:/g/personal/ricardo_kohler_prof_sc_senac_br/ESdg9gtMpgRBvjOjN6-0VX4BcAmzOgNKGpgtw5uh2OcWLA)|---|
 
 ### Links úteis
 #### Backend
