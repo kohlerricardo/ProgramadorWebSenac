@@ -66,3 +66,5 @@ Neste repositório serão colocados os arquivos contendo:
     - https://developer.mozilla.org/pt-BR/docs/Web/HTML
 - Framework CSS
     - https://picocss.com/docs
+#### APIs para uso no PI
+- https://brasilapi.com.br/

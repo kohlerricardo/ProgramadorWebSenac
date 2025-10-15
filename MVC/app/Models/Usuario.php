@@ -3,30 +3,35 @@
 namespace App\Models;
 
 use App\Core\Database;
+use App\Core\Model;
 
-class Usuario
+class Usuario extends Model
 {
     protected $db;
+    protected $table = 'usuario';
+    protected $id = 'id_usuario';
+    private $groups;
+    private $roles;
 
     public function __construct(){
-        $this->db = Database::getInstance()->getConnection();
+        parent::__construct();
     }
     /**
-     * Retorna todos os produtos.
-     * @return array
+     * @param string $grupo que deve ser consultado 
+     * @return bool true se o usuário pertence ao grupo, false caso contrário.
      */
-    public function listarTodos()
+    public function inGroup(string $grupo):bool
     {
-        return $this->dados;
-    }
 
-    /**
-     * Busca um produto pelo seu ID.
-     * @param int $id
-     * @return array|null
-     */
-    public function buscarPorId($id)
-    {
-        return $this->dados[$id] ?? null;
     }
+    /**
+     * @param string $role que deve ser consultado 
+     * @return bool true se o usuário possui o role/papel pesquisado, false caso contrário.
+     */
+    public function hasRole(string $role):bool
+    {
+
+    }
+    
+
 }
