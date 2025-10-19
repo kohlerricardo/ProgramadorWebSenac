@@ -28,7 +28,7 @@ $router->post('/fetchAPI','ClienteController@fetchAPI');
 
 // // Rotas de Autenticação
 // // A mesma URI pode ter ações diferentes para GET e POST
-// $router->get('/auth', 'AuthController@index');        // Mostra o formulário de login
+$router->get('/auth', 'AuthController@auth');        // Mostra o formulário de login
 // $router->post('/auth/login', 'AuthController@login');   // Processa os dados do formulário
 // $router->get('/auth/logout', 'AuthController@logout');  // Efetua o logout
 
