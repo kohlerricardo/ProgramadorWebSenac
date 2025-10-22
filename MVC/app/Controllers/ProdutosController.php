@@ -76,8 +76,13 @@ class ProdutosController extends Controller
             $this->redirect(url_to('produtos'));
         }else{
             $this->redirect(url_to('produtos'));
-        }
-        
-
+        }      
     }
+    public function buscar(){
+        $termo = $_POST['produto'];
+        $produtoModel = new Produto();
+        $resultado = $produtoModel->findBy(['nome'=>$termo]);
+        header('Content-Type: application/json');
+        echo json_encode($resultado);
+        }
 }

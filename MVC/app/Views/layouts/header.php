@@ -9,20 +9,35 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><?= $titulo ?></title>
   </head>
-  <body>
+  <body class="container">
     <nav>
-      <ul><li><strong>Bodega</strong></li></ul>
+      <ul><li><a href="<?= url_to('')?>"><strong>Bodega</strong></a></li></ul>
       <ul>
         <li>
           <details class="dropdown">
           <summary>Produtos</summary>
           <ul>
-            <li><a href="produtos">Listar</a></li>
-            <li><a href="produtos/cadastrar">Cadastrar</a></li>
+            <li><a href="<?=url_to('produtos')?>">Listar</a></li>
+            <li><a href="<?=url_to('produtos/cadastrar')?>">Cadastrar</a></li>
           </ul>
         </details>
       </li>
-        <li><a href="<?=url_to('cadastrar')?>">Cadastrar</a></li>
-
+        <?php
+          use App\Core\Auth;
+          if(!Auth::check()):
+        ?>
+        <li><a href="<?=url_to('usuario/cadastrar')?>">Criar Conta</a></li>
+        <li><a href="<?=url_to('auth')?>">Login</a></li>
+        <?php
+        else:
+          ?>
+          <li>
+          <p>Bem vindo <?= Auth::user()->nome?></p>
+          <p>Seu email é <?= Auth::user()->email?></p>
+          </li>
+        <li><a href="<?=url_to('auth/logout')?>">Logout</a></li>
+        <?php
+        endif
+        ?>
       </ul>
     </nav>

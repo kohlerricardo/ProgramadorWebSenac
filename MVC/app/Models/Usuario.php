@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Core\Auth;
 use App\Core\Database;
 use App\Core\Model;
 
@@ -12,7 +13,7 @@ class Usuario extends Model
     protected $id = 'id_usuario';
     private $groups;
     private $roles;
-
+    
     public function __construct(){
         parent::__construct();
     }
@@ -32,28 +33,38 @@ class Usuario extends Model
     {
         return false;
     }
-    
-    public function findByEmail($email)
+    /**
+     * Busca usuario por campo 
+     * @param array $parametro -  array associativo contendo nome do campo a ser pesquisado e o valor
+     * @return registro encontrado ou null
+    */
+    public function findBy(array $parametros)
     {
-        $sql = "SELECT * FROM {$this->table} where email = :email";
+        $key = array_key_first($parametros);
+        $sql = "SELECT * FROM USUARIO WHERE ".$key."= :$key";
         $stmt = $this->db->prepare($sql);
-        $stmt->execute(['email'=>$email]);
-        return $stmt->fetch(); 
+        $stmt->execute($parametros);
+        return $stmt->fetch();
     }
+    /**
+     * Realiza o procedimento de login.
+     * @param array $credentials - credenciais para login
+     * @return objeto|null representando o usuario.
+     */
     public function attempt(array $credentials){
-    
-        if(isset($credentials['username'])){
-            $username = $credentials['username'];
-            unset($credentials['username']);
+        if(!isset($credentials['email'])){
+            return null;
         }
-        if(isset($credentials['password'])){
-            $password = $credentials['password'];
-            unset($credentials['password']);
-        }  
-        $user = $this->findByEmail($username);
-        if(isset($user)){
-            return ($user->senha === $password)?$user:null;
+        $email=$credentials['email'];
+        unset($credentials['email']);
+        $usuario = $this->findBy(['email'=>$email]); 
+        if(!isset($usuario)){
+            return null;
         }
+        if(password_verify($credentials['senha'],$usuario->senha)){
+            return $usuario;
+        }
+        return null;
 
     }
 

@@ -1,7 +1,6 @@
 <?= (isset($errors))? $errors: "" ?>
 <main class="container">
     <div class="grid">
-       <button onclick="searchWithFetch()">Fetch</button>
         <div>
         <form action="<?= url_to('cliente/create')?>" method="post" enctype="multipart/form-data">
     

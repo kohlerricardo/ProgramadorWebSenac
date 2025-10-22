@@ -12,7 +12,7 @@ define('UPLOAD_PATH','C:\xampp\htdocs\ProgramadorWebSenac\MVC\public\uploads'.DI
 define('HOST','127.0.0.1');
 define('DB_NAME','projeto');
 define('USERNAME','root');//não é interessante que se use o root
-define('PASSWORD','root');
+define('PASSWORD','');
 $_ENV['APP_ENV']='development';
 
 
